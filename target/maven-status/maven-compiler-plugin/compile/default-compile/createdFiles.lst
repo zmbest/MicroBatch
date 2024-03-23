@@ -1,0 +1,14 @@
+edu\scut\microbatch\TaskQueueImpl.class
+edu\scut\microbatch\MicroBatch.class
+edu\scut\microbatch\Interface\TopicChannel.class
+edu\scut\microbatch\Interface\TaskQueue.class
+edu\scut\microbatch\Interface\MissionMapper.class
+edu\scut\microbatch\Interface\TopicConfig.class
+edu\scut\microbatch\MicroBatchManagerImpl.class
+edu\scut\microbatch\TopicChannelImpl.class
+edu\scut\microbatch\Interface\MicroBatchManager.class
+edu\scut\microbatch\Mission.class
+edu\scut\microbatch\TopicConfigImpl.class
+edu\scut\microbatch\Exception\TaskRejectException.class
+edu\scut\microbatch\MicroBatchTaskImpl.class
+edu\scut\microbatch\Interface\MicroBatchTask.class

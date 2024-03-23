@@ -21,7 +21,7 @@ public interface TopicConfig {
     //任务队列
     TaskQueue getTaskQueue();
     //获得微批管理者
-    MicroBatchManagerImpl getManager();
+    MicroBatchManager getManager();
     //获得线程池
     ThreadPoolExecutor getThreadPool();
     //获得最大接受任务数量

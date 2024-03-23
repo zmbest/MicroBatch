@@ -1,10 +1,10 @@
 package edu.scut.microbatch;
 
+import edu.scut.microbatch.Interface.MicroBatchManager;
 import edu.scut.microbatch.Interface.MissionMapper;
 import edu.scut.microbatch.Interface.TaskQueue;
 import edu.scut.microbatch.Interface.TopicConfig;
 import lombok.Data;
-import lombok.Setter;
 
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -69,7 +69,7 @@ public class TopicConfigImpl implements TopicConfig {
     }
 
     @Override
-    public MicroBatchManagerImpl getManager() {
+    public MicroBatchManager getManager() {
         return manager;
     }
 

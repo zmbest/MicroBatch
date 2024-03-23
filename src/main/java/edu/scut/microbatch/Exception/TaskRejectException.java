@@ -1,4 +1,4 @@
 package edu.scut.microbatch.Exception;
 
-public class TaskRejectException extends RuntimeException{
+public class TaskRejectException extends Exception{
 }

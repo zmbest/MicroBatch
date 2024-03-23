@@ -2,6 +2,7 @@ package edu.scut.microbatch;
 
 import edu.scut.microbatch.Exception.TaskRejectException;
 import edu.scut.microbatch.Interface.*;
+import javafx.concurrent.Task;
 
 import java.io.File;
 import java.util.Date;
@@ -25,18 +26,21 @@ public class TopicChannelImpl implements TopicChannel {
         manager=topicConfig.getManager();
         manager.start();
     }
-    public MicroBatchTask createTask(){
+    public MicroBatchTask createTask() throws TaskRejectException {
+        if(topicConfig.getMaxTask()<=topicConfig.getTaskCount()){
+            throw new TaskRejectException();
+        }
         MissionMapper mapper=topicConfig.getMissionMapper();
         Mission mission=createMission();
         mapper.insertMission(mission);
         MicroBatchTaskImpl taskRes=new MicroBatchTaskImpl(mission,topicConfig);
         return taskRes;
     }
-    public void pushTask(MicroBatchTask task){
+    public void pushTask(MicroBatchTask task)throws TaskRejectException {
         if(task==null){
             throw new NullPointerException();
         }
-        if(topicConfig.getMaxTask()==topicConfig.getTaskCount()){
+        if(topicConfig.getMaxTask()<=topicConfig.getTaskCount()){
             throw new TaskRejectException();
         }
         synchronized (this){

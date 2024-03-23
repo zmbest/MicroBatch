@@ -38,9 +38,9 @@ public class MicroBatchTaskImpl implements MicroBatchTask {
             Process p= builder.start();
             boolean timeOut=p.waitFor(topicConfig.getProcessWaitTime(), TimeUnit.MILLISECONDS);
             if(timeOut==true){
-                mission.setMissionState(MicroBatch.MISSIONTIMEOUT);
-            }else{
                 mission.setMissionState(MicroBatch.MISSIONDONE);
+            }else{
+                mission.setMissionState(MicroBatch.MISSIONTIMEOUT);
             }
         } catch (IOException e) {
             mission.setMissionState(MicroBatch.MISSIONFAIL);

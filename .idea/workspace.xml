@@ -4,16 +4,107 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22e9a88a-76e0-4117-84e2-56958bba921a" name="变更" comment="" />
+    <list default="true" id="22e9a88a-76e0-4117-84e2-56958bba921a" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Exception/TaskRejectException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Exception/TaskRejectException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MicroBatchManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MicroBatchManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MicroBatchTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MicroBatchTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/TopicChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/TopicChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/TopicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/TopicConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/MicroBatchTaskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/MicroBatchTaskImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/TopicChannelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/TopicChannelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/TopicConfigImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/TopicConfigImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2e4fQXRTkDzRePU48GLUxZSqUzM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/javacode/MicroBatchInGitHub/MicroBatch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.jsOptions"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.scut.microbatch.Main" />
+      <module name="MicroBatch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.scut.microbatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="22e9a88a-76e0-4117-84e2-56958bba921a" name="变更" comment="" />
+      <created>1711168754233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711168754233</updated>
+      <workItem from="1711168755530" duration="1158000" />
+      <workItem from="1711170271473" duration="6519000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
