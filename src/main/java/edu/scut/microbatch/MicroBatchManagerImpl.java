@@ -30,30 +30,32 @@ public class MicroBatchManagerImpl implements MicroBatchManager {
             new File(config.getWorkPath() + config.getTopicName()+ "/input").mkdirs();
             new File(config.getWorkPath() + config.getTopicName() + "/output").mkdirs();
             new File(config.getWorkPath() + config.getTopicName() + "/error").mkdirs();
-
         }
         long sleepTime=config.getBatchTime();
         while(running){
             try {
                 Thread.sleep(sleepTime);
             } catch (InterruptedException e) {
+
             }finally {
                 commitTask();
             }
         }
     }
+    @Override
+    public void pause() {
+        thread.interrupt();
+    }
     public void commitTask(){
         synchronized (taskQueue){
             while(!taskQueue.empty()){
                 MicroBatchTask task=taskQueue.getFirst();
-                if(task!=null){
                     try {
                         threadPoolExecutor.submit(task);
                         taskQueue.removeFirst();
                     }catch (Exception e){
                         break;
                     }
-                }
             }
         }
     }
@@ -63,8 +65,5 @@ public class MicroBatchManagerImpl implements MicroBatchManager {
         thread.start();
     }
 
-    @Override
-    public void pause() {
-        thread.interrupt();
-    }
+
 }

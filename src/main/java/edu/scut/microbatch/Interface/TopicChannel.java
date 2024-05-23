@@ -7,4 +7,5 @@ import edu.scut.microbatch.Mission;
 public interface TopicChannel {
     MicroBatchTask createTask() throws TaskRejectException;
     void pushTask(MicroBatchTask task) throws TaskRejectException;
+    TopicConfig getTopicConfig();
 }

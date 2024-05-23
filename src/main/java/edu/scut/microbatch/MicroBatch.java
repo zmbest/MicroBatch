@@ -27,6 +27,9 @@ public class MicroBatch{
         return topicChannelImpl;
     }
     public synchronized void createTopicChannel(TopicChannel topicChannel,String topicName){
+        if(channel.get(topicName)!=null){
+            throw new RuntimeException("主题已创建");
+        }
         channel.put(topicName,topicChannel);
     }
     public synchronized boolean deleteTopicChannel(String topicName){

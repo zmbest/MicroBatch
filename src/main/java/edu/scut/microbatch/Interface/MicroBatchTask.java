@@ -16,4 +16,5 @@ public interface MicroBatchTask extends Runnable{
     void setError();
     //设置进程的输入
     void setInput();
+    void setMission(Mission mission);
 }

@@ -17,19 +17,23 @@ public class MicroBatchTaskImpl implements MicroBatchTask {
     protected TopicConfig topicConfig;
     protected ProcessBuilder builder;
 
-    protected MicroBatchTaskImpl(Mission mission, TopicConfig topicConfig){
-        this.mission = mission;
+    protected MicroBatchTaskImpl( TopicConfig topicConfig){
         this.topicConfig = topicConfig;
         builder = new ProcessBuilder(topicConfig.getWorkCmd());
         builder.directory(new File(topicConfig.getWorkPath()));
-        {
-        inputPath=topicConfig.getWorkPath()+mission.getTopicName()+"/input/"+mission.getMissionId();
-        outputPath=topicConfig.getWorkPath()+mission.getTopicName()+"/output/"+mission.getMissionId();
-        errorPath=topicConfig.getWorkPath()+mission.getTopicName()+"/error/"+mission.getMissionId();
-        }
+//        {
+//            inputPath=topicConfig.getWorkPath()+mission.getTopicName()+"/input/"+mission.getMissionId();
+//            outputPath=topicConfig.getWorkPath()+mission.getTopicName()+"/output/"+mission.getMissionId();
+//            errorPath=topicConfig.getWorkPath()+mission.getTopicName()+"/error/"+mission.getMissionId();
+//        }
     }
     @Override
     public void run() {
+        {
+            inputPath=topicConfig.getWorkPath()+mission.getTopicName()+"/input/"+mission.getMissionId();
+            outputPath=topicConfig.getWorkPath()+mission.getTopicName()+"/output/"+mission.getMissionId();
+            errorPath=topicConfig.getWorkPath()+mission.getTopicName()+"/error/"+mission.getMissionId();
+        }
         //设置输入、输出、异常
         setError();
         setInput();
@@ -78,6 +82,12 @@ public class MicroBatchTaskImpl implements MicroBatchTask {
         builder.redirectInput(inputFile);
         }
     }
+
+    @Override
+    public void setMission(Mission mission) {
+        this.mission=mission;
+    }
+
     @Override
     public Mission getMission(){
         return mission;

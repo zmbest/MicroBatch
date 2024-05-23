@@ -30,10 +30,10 @@ public class TopicChannelImpl implements TopicChannel {
         if(topicConfig.getMaxTask()<=topicConfig.getTaskCount()){
             throw new TaskRejectException();
         }
-        MissionMapper mapper=topicConfig.getMissionMapper();
-        Mission mission=createMission();
-        mapper.insertMission(mission);
-        MicroBatchTaskImpl taskRes=new MicroBatchTaskImpl(mission,topicConfig);
+//        MissionMapper mapper=topicConfig.getMissionMapper();
+//        Mission mission=createMission();
+//        mapper.insertMission(mission);
+        MicroBatchTaskImpl taskRes=new MicroBatchTaskImpl(topicConfig);
         return taskRes;
     }
     public void pushTask(MicroBatchTask task)throws TaskRejectException {
@@ -44,6 +44,10 @@ public class TopicChannelImpl implements TopicChannel {
             throw new TaskRejectException();
         }
         synchronized (this){
+            MissionMapper mapper=topicConfig.getMissionMapper();
+            Mission mission=createMission();
+            mapper.insertMission(mission);
+            task.setMission(mission);
             topicConfig.addTaskCount(1);
             taskQueue.offer(task);
             if(taskQueue.size()>=topicConfig.getMaxBatchTask()){
@@ -61,5 +65,8 @@ public class TopicChannelImpl implements TopicChannel {
     }
     public Mission getMission(long missionId){
         return topicConfig.getMissionMapper().getMission(missionId);
+    }
+    public TopicConfig getTopicConfig(){
+        return topicConfig;
     }
 }

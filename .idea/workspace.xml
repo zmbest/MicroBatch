@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22e9a88a-76e0-4117-84e2-56958bba921a" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Exception/TaskRejectException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Exception/TaskRejectException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MicroBatchManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MicroBatchManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MicroBatchTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MicroBatchTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/MissionMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/TopicChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/TopicChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/TopicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/Interface/TopicConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/MicroBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/MicroBatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/MicroBatchManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/MicroBatchManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/MicroBatchTaskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/MicroBatchTaskImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/TopicChannelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/TopicChannelImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/TopicConfigImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/scut/microbatch/TopicConfigImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MicroBatch-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MicroBatch-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/Interface/MicroBatchTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/Interface/MicroBatchTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/Interface/TopicChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/Interface/TopicChannel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/MicroBatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/MicroBatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/MicroBatchManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/MicroBatchManagerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/MicroBatchTaskImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/MicroBatchTaskImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/TopicChannelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/TopicChannelImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/TopicConfigImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/scut/microbatch/TopicConfigImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/javacode/MicroBatchInGitHub/MicroBatch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.jsOptions"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/javacode/MicroBatchInGitHub/MicroBatch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.scut.microbatch.Main" />
@@ -96,7 +101,21 @@
       <option name="presentableId" value="Default" />
       <updated>1711168754233</updated>
       <workItem from="1711168755530" duration="1158000" />
-      <workItem from="1711170271473" duration="6519000" />
+      <workItem from="1711170271473" duration="7033000" />
+      <workItem from="1711181361121" duration="892000" />
+      <workItem from="1711936392508" duration="595000" />
+      <workItem from="1711941512179" duration="6000" />
+      <workItem from="1713064913435" duration="1018000" />
+      <workItem from="1713862056205" duration="1640000" />
+      <workItem from="1713928737291" duration="609000" />
+      <workItem from="1713943192344" duration="6023000" />
+      <workItem from="1714014620368" duration="978000" />
+      <workItem from="1714027603399" duration="3771000" />
+      <workItem from="1714032785473" duration="510000" />
+      <workItem from="1714101483513" duration="625000" />
+      <workItem from="1714115874625" duration="645000" />
+      <workItem from="1715934170617" duration="1426000" />
+      <workItem from="1716214914514" duration="2073000" />
     </task>
     <servers />
   </component>

@@ -59,10 +59,6 @@ public class TopicConfigImpl implements TopicConfig {
         taskCount+=num;
     }
 
-    @Override
-    public long getProcessWaitTime() {
-        return processWaitTime;
-    }
 
     public TaskQueue getTaskQueue() {
         return taskQueue;
@@ -73,7 +69,23 @@ public class TopicConfigImpl implements TopicConfig {
         return manager;
     }
 
-    public TopicConfigImpl(List<String> workCmd,MissionMapper missionMapper,String topicName){
+    public int getMaxTask() {
+        return maxTask;
+    }
+
+    public int getTaskCount() {
+        return taskCount;
+    }
+
+    public long getProcessWaitTime() {
+        return processWaitTime;
+    }
+
+    public void setProcessWaitTime(long processWaitTime) {
+        this.processWaitTime = processWaitTime;
+    }
+
+    public TopicConfigImpl(List<String> workCmd, MissionMapper missionMapper, String topicName){
         if(workCmd==null||missionMapper==null){
             throw(new NullPointerException());
         }
@@ -81,7 +93,7 @@ public class TopicConfigImpl implements TopicConfig {
         maxBatchTask=3;
         batchTime=100;
         this.workCmd=workCmd;
-        threadPool=new ThreadPoolExecutor(1,1,100,
+        threadPool=new ThreadPoolExecutor(5,10,100,
                 TimeUnit.MILLISECONDS,new ArrayBlockingQueue<Runnable>(5));
         taskQueue=new TaskQueueImpl();
         manager=new MicroBatchManagerImpl(this);
@@ -135,7 +147,5 @@ public class TopicConfigImpl implements TopicConfig {
         this.taskCount = taskCount;
     }
 
-    public void setProcessWaitTime(long processWaitTime) {
-        this.processWaitTime = processWaitTime;
-    }
+
 }

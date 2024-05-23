@@ -10,4 +10,3 @@ public interface MicroBatchManager extends Runnable{
     //暂停管理者，指的是让管理者停止调度，直接推送任务
     void pause();
 }
-// springboot channel    ->       manager
